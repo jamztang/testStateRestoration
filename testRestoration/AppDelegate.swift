@@ -32,6 +32,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application(_ application: UIApplication,
+                              shouldRestoreApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
 
+
+//    func application(_ application: UIApplication, willEncodeRestorableStateWith coder: NSCoder) {
+//        print("AppDelegate willEncodeRestorableStateWith")
+//        if #available(iOS 13, *) {
+//
+//        } else {
+//        // Trigger saving of the root view controller
+////            coder.encode(self.window?.rootViewController, forKey: "root")
+//        }
+//    }
+//
+//    func application(_ application: UIApplication, didDecodeRestorableStateWith coder: NSCoder) {
+//        print("AppDelegate didDecodeRestorableStateWith")
+//    }
+//
+//    func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+//        print("AppDelegate shouldSaveApplicationState")
+//        if #available(iOS 13, *) {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
 }
 
